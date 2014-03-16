@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  taste: 1
+  service: 1
+  environment: 1
+  foodstyle: 1
+  vfm: 1
+  fullreview: MyString
+
+two:
+  taste: 1
+  service: 1
+  environment: 1
+  foodstyle: 1
+  vfm: 1
+  fullreview: MyString
