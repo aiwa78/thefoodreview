@@ -1,3 +1,28 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#wood{
+	background-image:url('rsz_scratched_pine_wood.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	opacity: 0.9;	
+}
+
+#wood img {
+  width:100%;
+}
+
+.btn-lg{
+	background-color: #470e08;
+	border-color: #0d0847;
+}
+
+.btn-lg:hover{
+	background-color: #472d08;
+	opacity: 0.8;
+	border-color: #0d0847;
+}
+

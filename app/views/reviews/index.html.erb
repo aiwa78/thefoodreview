@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Taste</th>
       <th>Service</th>
       <th>Environment</th>
@@ -18,6 +19,7 @@
   <tbody>
     <% @reviews.each do |review| %>
       <tr>
+        <td><%= image_tag review.image.url(:medium) %></td>
         <td><%= review.taste %></td>
         <td><%= review.service %></td>
         <td><%= review.environment %></td>

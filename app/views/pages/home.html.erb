@@ -1,2 +1,32 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/assets/restaurant.jpg" alt="restaurant">
+      <div class="caption">
+        <h3>Discover useful reviews and find out all the new hot spots</h3>
+        <p>Be part of the food review community, read what our users think about all the new spots and contribute back by writing your own reviews and recommendations</p>
+        <%=link_to "Discover reviews", reviews_path,  class: "btn btn-primary btn-lg"%>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/assets/steak1.jpg" alt="dish review">
+      <div class="caption">
+        <h3>Get your appetite going by checking out delicous dishes</h3>
+        <p>Our reviews can contain photos of the most interesting dishes. See what is served and upload what you think is worth sharing!</p>
+        <%=link_to "Discover dishes", restaurants_path,  class: "btn btn-primary btn-lg"%>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/assets/hearteggs.jpg" alt="your recipes">
+      <div class="caption">
+        <h3>Our blog</h3>
+        <p>Find out about new recipes, check out what others have cooked</p>
+        <%=link_to "Read our blog", root_path,  class: "btn btn-primary btn-lg"%>   
+      </div>
+    </div>
+  </div>
+</div>
