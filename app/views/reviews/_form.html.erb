@@ -13,28 +13,12 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :taste %><br>
-    <%= f.number_field :taste %>
-  </div>
 
-  <div class="field">
-    <%= f.label :service %><br>
-    <%= f.number_field :service %>
-  </div>
-  <div class="field">
-    <%= f.label :environment %><br>
-    <%= f.number_field :environment %>
-  </div>
-  <div class="field">
-    <%= f.label :foodstyle %><br>
-    <%= f.number_field :foodstyle %>
-  </div>
-  <div class="field">
+  <div class="form-group vfm">
     <%= f.label :vfm %><br>
     <%= f.number_field :vfm %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :fullreview %><br>
     <%= f.text_field :fullreview %>
   </div>
@@ -42,7 +26,10 @@
     <%= f.label :image %>
     <%= f.file_field :image, class: "form-control" %>
   </div>
-
+  <div class="form-group">
+    <%= f.label :restaurant_id %>
+    <%= f.collection_select(:restaurant_id, Restaurant.all, :id, :name) %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

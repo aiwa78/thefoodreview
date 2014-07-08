@@ -3,26 +3,6 @@
 <%= image_tag @review.image.url(:medium) %>
 
 <p>
-  <strong>Taste:</strong>
-  <%= @review.taste %>
-</p>
-
-<p>
-  <strong>Service:</strong>
-  <%= @review.service %>
-</p>
-
-<p>
-  <strong>Environment:</strong>
-  <%= @review.environment %>
-</p>
-
-<p>
-  <strong>Foodstyle:</strong>
-  <%= @review.foodstyle %>
-</p>
-
-<p>
   <strong>Vfm:</strong>
   <%= @review.vfm %>
 </p>
@@ -31,6 +11,10 @@
   <strong>Fullreview:</strong>
   <%= @review.fullreview %>
 </p>
+
+<p>
+  <strong> Restaurant:</strong>
+  <%=Restaurant.find_by_id(@review.restaurant_id).name%></p>
 
 <%= link_to 'Edit', edit_review_path(@review) %> |
 <%= link_to 'Back', reviews_path %>

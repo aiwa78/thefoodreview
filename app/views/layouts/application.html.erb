@@ -6,6 +6,8 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+<!-- Wrap all page content here -->
+<div id="wrap">
 <body>
   <%= render "layouts/navbar" %>
 <div class="container">
@@ -20,4 +22,12 @@
 </div>
 
 </body>
+</div>
+
+<!--sticky footer-->
+<div id="footer">
+  <div class="container">
+    <p class="text-muted credit">The food review </p>
+  </div>
+</div>
 </html>
